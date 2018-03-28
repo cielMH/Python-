@@ -1,0 +1,50 @@
+Python系统标准模块主要有两个模块:sys,os
+   其他的标准模块:
+          global:用于文件名扩展
+          socket:用于网络连接和进程间通信(IPC)
+          threading,_thread,queue:用于运行和同步化并发线程
+          time,timeit:用于获取系统时间相关细节
+          subprocess,multiprocessing:用于启动和控制并行进程
+          signal,select,shutil,tempfile:用于多种系统相关任务
+          pySerial:串行端口接口
+          Pexpect:用于控制程序间对话的类Expect系统
+   
+   自定义分页的脚本程序：
+    def more(text,numlines=15):
+	    lines=text.splitlines()
+	    while lines:
+		    chunk=lines[:numlines]
+		    lines=lines[numlines:]
+		    for line in chunk:
+			  print(line)
+		    if lines and input('More') not in ['y','Y']:break
+
+    if __name__=='__main__':
+	    import sys
+	    more(open(sys.argv[1]).read(),10)
+          
+ 获取模块文档的方法:
+  1.从库手册阅读相关条目
+  2.阅读源代码
+  3.交互的获取它的属性列表和文档字符串
+  
+  字符串方法基础知识：
+     find:该函数返回子字符串第一个匹配所在的偏移位置
+     replace:该函数全局搜索匹配的字符串并替换，并返回一个新的字符串，但是并不会改变原有字符串
+     in:搜索子字符串是否存在
+  
+  新添的字符串类型:
+    1.bytes:用来标示8位二进制数据的短整形序列
+    2.bytesarray:字节的一个可更改的变异形式
+    
+  文件操作基础知识:
+    文件对象
+    
+  SYS模块介绍
+    查看当前平台和可容纳的最整形数以及python版本
+      sys.platform,sys.maxsize,sys.version
+    模块搜索路径:
+      
+    
+  
+  
