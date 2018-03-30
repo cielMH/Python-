@@ -40,11 +40,25 @@ Python系统标准模块主要有两个模块:sys,os
   文件操作基础知识:
     文件对象
     
-  SYS模块介绍
+ SYS模块介绍
     查看当前平台和可容纳的最整形数以及python版本
       sys.platform,sys.maxsize,sys.version
     模块搜索路径:
-      
-    
-  
+   
+已加载模块表:
+	sys模块包含嵌入解释器的钩子。
+异常信息函数:sys.exc_info()
+	
+sys模块导出的其他工具:
+	sys.argv:显示为由字符串组成的列表的命令行参数
+	sys.stdin,sys.stdout,sys.stderr:标准流
+	sys.exit:程序可调用该函数强制退出
+	
+
+		
+		
+		
+		
+		
+		
   
